@@ -1,3 +1,0 @@
-# STIP-format-1.0
-# source: "o_FightBad.avi" frame-width:640 frame-height:480 frame-offset:0
-# point-type x y t sigma2 tau2 detector-confidence dscr-hog(72) dscr-hof(90)
