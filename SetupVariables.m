@@ -1,11 +1,11 @@
 global RANDOM_FOREST_VERBOSE;
-    RANDOM_FOREST_VERBOSE = true;
+    RANDOM_FOREST_VERBOSE = false;
 global RANDOM_FOREST_TREES;
-    RANDOM_FOREST_TREES = 10;
+    RANDOM_FOREST_TREES = 50;
 global RANDOM_FOREST_VERBOSE_MODEL;
     RANDOM_FOREST_VERBOSE_MODEL = false;
 global LINEAR_SVM_VERBOSE;
-    LINEAR_SVM_VERBOSE = true;
+    LINEAR_SVM_VERBOSE = false;
     
     
 DATA_GLCM = 'F:\DATA\DATA-GLCMMEX';
@@ -28,6 +28,11 @@ DATA_VIDEO_UMNSCENE2 = struct('dir','F:\Videos\UMN Scene 2',...
     'name','UMN_SCENE2');
 DATA_VIDEO_UMNSCENE3 = struct('dir','F:\Videos\UMN Scene 3',...
     'name','UMN_SCENE3');
+DATA_VIDEO_UMNMULTI = struct('dir','F:\Videos\UMN MultiClass',...
+    'name','UMN_MULTI');
+
+
+
 
 % Default GLCM parameters
 Param_GLCM_Default = struct('baseoffsets',[1 0; -1 0; 0 1;0 -1],...
