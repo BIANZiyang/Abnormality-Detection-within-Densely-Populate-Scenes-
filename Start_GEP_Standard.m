@@ -1,8 +1,8 @@
 SetupVariables;
 
-DATA_VIDEO_CHOSENSET = DATA_VIDEO_UMNSCENE2;
+DATA_VIDEO_CHOSENSET = DATA_VIDEO_KTH;
 
-VideoList = FN_PopulateStandardList(DATA_VIDEO_CHOSENSET.dir,2);
+VideoList = FN_PopulateStandardList(DATA_VIDEO_CHOSENSET.dir,10);
 
 Param_GLCM = Param_GLCM_Default;
 
@@ -10,8 +10,8 @@ Param_EdgeCardinality = Param_EdgeCardinality_Default;
 
 Param_PixelDifference=  Param_PixelDifference_Default;
 
-WindowSize = 5;
-WindowSkip = 80;
+WindowSize = 24;
+WindowSkip = 12;
 ImageResize = 0.5;
 
 % Extract Descriptors
@@ -27,4 +27,4 @@ ImageResize = 0.5;
 
 % Perform Classification
 [RAND_FOREST,LINEAR_SVM] = ...
-    FN_CrossValidationTesting( GEPDescriptors,GEPGroup,GEPTags );
+    FN_CrossValidationTesting( GEPDescriptors,GEPGroup,GEPTags,true,true );

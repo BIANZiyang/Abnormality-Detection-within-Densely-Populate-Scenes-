@@ -1,4 +1,4 @@
-function [ Descriptors ] = PerformPCA( Descriptors )
+function [ Descriptors,e ] = PerformPCA( Descriptors )
     % Perform Dimension Reduction
     Descriptors = mat2cell(Descriptors);
         ElementsToKeepMin = 2;%;

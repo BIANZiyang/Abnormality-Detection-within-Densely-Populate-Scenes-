@@ -3,7 +3,7 @@ opts = statset('display','iter');
 fun = @FN_LinearSVMScore;
 [fs,history] = sequentialfs(fun,...
         GLCMNonPCADescriptors,GLCMGroup,GLCMTags,'cv','resubstitution',...
-        'direction','backward','options',opts)
+        'direction','backward','options',opts);
     
 ReducedDescriptors = GLCMNonPCADescriptors(:,fs);
 
@@ -31,7 +31,7 @@ opts = statset('display','iter');
 fun = @FN_RandomForestScore;
 [RANDOM_FOREST_fs,history] = sequentialfs(fun,...
         GLCMNonPCADescriptors,GLCMGroup,GLCMTags,'cv','resubstitution',...
-        'direction','backward','options',opts)
+        'direction','backward','options',opts);
 
 
 ReducedDescriptors = GLCMNonPCADescriptors(:,RANDOM_FOREST_fs);
